@@ -1,7 +1,0 @@
-{
-  "name": "drop-link-backend",
-  "private": true,
-  "scripts": {
-    "start": "node src/server.js"
-  }
-}
