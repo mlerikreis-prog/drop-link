@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="DROP LINK - gestão de dropshipping e Mercado Livre">
+  <title>DROP LINK V3.1</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">DL</div>
+      <div><strong>DROP LINK</strong><small>V3.1</small></div>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-view="dashboard"><span>▦</span>Dashboard</button>
+      <button class="nav-item" data-view="products"><span>◇</span>Produtos</button>
+      <button class="nav-item" data-view="suppliers"><span>▣</span>Fornecedores</button>
+      <button class="nav-item" data-view="orders"><span>🛒</span>Pedidos</button>
+      <button class="nav-item" data-view="meli"><span>◉</span>Mercado Livre</button>
+      <button class="nav-item" data-view="customers"><span>♙</span>Clientes</button>
+      <button class="nav-item" data-view="stock"><span>□</span>Estoque</button>
+      <button class="nav-item" data-view="reports"><span>▥</span>Relatórios</button>
+      <button class="nav-item" data-view="settings"><span>⚙</span>Configurações</button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <div class="user-card"><div class="avatar">DL</div><div><b>Administrador</b><small>Operação</small></div><span>›</span></div>
+      <div class="company-card"><div class="company-icon">▦</div><div><b>Minha Empresa</b><small>DROP LINK</small></div></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Buscar produtos, pedidos, clientes..."></div>
+      <div class="top-actions"><button title="Notificações">♧<i>0</i></button><button title="Ajuda">?</button><div class="top-avatar">DL</div></div>
+    </header>
+    <section id="app" class="content"></section>
+  </main>
+</div>
+
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal hidden"><div class="modal-card"><button id="modalClose" class="modal-close">×</button><div id="modalBody"></div></div></div>
+<script src="/js/app.js" defer></script>
+</body>
+</html>
